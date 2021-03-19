@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "90"; ObjectID = "2Gm-HT-kLx"; */
+"2Gm-HT-kLx.text" = "90";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "AzV-c5-Mx4"; */
+"AzV-c5-Mx4.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "?"; ObjectID = "CgT-JL-MWE"; */
+"CgT-JL-MWE.normalTitle" = "?";
+
+/* Class = "UILabel"; text = "290"; ObjectID = "Czd-UG-JtB"; */
+"Czd-UG-JtB.text" = "290";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Lgb-2g-Jap"; */
+"Lgb-2g-Jap.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "PLAY AGAIN"; ObjectID = "P2A-6D-QYI"; */
+"P2A-6D-QYI.normalTitle" = "PLAY AGAIN";
+
+/* Class = "UILabel"; text = "GAME OVER"; ObjectID = "Ucc-su-Ucz"; */
+"Ucc-su-Ucz.text" = "GAME OVER";
+
+/* Class = "UILabel"; text = "Are you ready to make the city safe again with the power of the Power Puff Girls? Collect points by tapping the Professor and the President. If you touch Mojo jojo and Him it is over! Achievements\n"; ObjectID = "dvV-pE-GiS"; */
+"dvV-pE-GiS.text" = "Are you ready to make the city safe again with the power of the Power Puff Girls? Collect points by tapping the Professor and the President. If you touch Mojo jojo and Him it is over! Achievements\n";
+
+/* Class = "UILabel"; text = "HIGH SCORE"; ObjectID = "fYP-Ml-smP"; */
+"fYP-Ml-smP.text" = "HIGH SCORE";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "lP7-xs-1l6"; */
+"lP7-xs-1l6.normalTitle" = "OK";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "olj-cI-JOE"; */
+"olj-cI-JOE.normalTitle" = "Button";
