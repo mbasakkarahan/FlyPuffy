@@ -14,10 +14,8 @@ class NasilOynarimViewController: UIViewController {
         super.viewDidLoad()
         nasilOynarimLabel.layer.cornerRadius = nasilOynarimLabel.frame.height / 9
         nasilOynarimLabel.clipsToBounds = true
- 
     }
     
-
     @IBAction func hazirimAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }

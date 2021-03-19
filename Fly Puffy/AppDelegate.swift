@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             icerik.badge = 1
             icerik.sound = UNNotificationSound.default
             
-            let tetikleme = UNTimeIntervalNotificationTrigger(timeInterval: 20, repeats: false) // TODO SÜRE ARTTIRILACAK
+            let tetikleme = UNTimeIntervalNotificationTrigger(timeInterval: 20, repeats: false)
             let bildirimİstegi = UNNotificationRequest(identifier: "Fly Puffy", content: icerik, trigger: tetikleme)
             
             UNUserNotificationCenter.current().add(bildirimİstegi, withCompletionHandler: nil)
@@ -41,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             icerik.badge = 1
             icerik.sound = UNNotificationSound.default
             
-            let tetikleme = UNTimeIntervalNotificationTrigger(timeInterval: 20, repeats: false) // TODO SÜRE ARTTIRILACAK
+            let tetikleme = UNTimeIntervalNotificationTrigger(timeInterval: 20, repeats: false) 
             let bildirimİstegi = UNNotificationRequest(identifier: "Fly Puffy", content: icerik, trigger: tetikleme)
             
             UNUserNotificationCenter.current().add(bildirimİstegi, withCompletionHandler: nil)

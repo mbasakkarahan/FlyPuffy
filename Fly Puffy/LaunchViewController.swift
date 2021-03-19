@@ -19,9 +19,6 @@ class LaunchViewController: UIViewController {
     override func viewDidLoad() {
         notificationAllowControl = false
         super.viewDidLoad()
-    
-        
-        
     }
     override func viewWillAppear(_ animated: Bool) {
        self.bubbless.alpha = 0
@@ -31,14 +28,11 @@ class LaunchViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
 
     }
-    
     func launchPlay(){
         UIView.animate(withDuration: 5, animations: {
             self.bubbless.alpha = 1
             self.blossom.alpha = 1
             self.buttercup.alpha = 1
-           
-          
         },completion:{
             (true) in
             

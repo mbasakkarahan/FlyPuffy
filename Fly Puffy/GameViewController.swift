@@ -17,15 +17,10 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         if let view = self.view as! SKView? {
-            // Load the SKScene from 'GameScene.sks'
             if let scene = GameScene(fileNamed: "GameScene") {
-                // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
                 scene.viewController = self
-                // Present the scene
                 view.presentScene(scene)
-              
-                
                 scene.anaKarakterSonuc = anaKarakter
                 if let tempKarakter = ppg as? SKSpriteNode {
                     
@@ -43,10 +38,7 @@ class GameViewController: UIViewController {
                         scene.ppg.texture = SKTexture(imageNamed: "buttercupGame")
                         scene.backgroundColor = UIColor(named: "buttercupColor")!
                         scene.ppg.size = CGSize(width: 200, height: 200)
-
-
                     }
-                    
                 }
             }
             
@@ -54,9 +46,7 @@ class GameViewController: UIViewController {
             
         }
     }
-    
-
-    override var shouldAutorotate: Bool {
+        override var shouldAutorotate: Bool {
         return true
     }
 

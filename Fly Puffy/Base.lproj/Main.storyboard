@@ -186,7 +186,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXs-xp-gel">
-                                <rect key="frame" x="-185" y="0.0" width="313" height="800"/>
+                                <rect key="frame" x="-185" y="-133" width="313" height="800"/>
                                 <color key="backgroundColor" name="bubblesColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="800" id="Sxf-Br-6Ww"/>
@@ -197,7 +197,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrQ-gc-Vrz">
-                                <rect key="frame" x="255" y="0.0" width="321" height="800"/>
+                                <rect key="frame" x="255" y="-133" width="321" height="800"/>
                                 <color key="backgroundColor" name="buttercupColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="321" id="3mu-Wi-yJB"/>
@@ -208,7 +208,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AzV-c5-Mx4">
-                                <rect key="frame" x="0.0" y="307" width="138" height="186"/>
+                                <rect key="frame" x="0.0" y="174" width="138" height="186"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="186" id="2bb-Xa-xxD"/>
                                     <constraint firstAttribute="width" constant="138" id="ujz-fN-LHn"/>
@@ -230,7 +230,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olj-cI-JOE">
-                                <rect key="frame" x="136" y="315.5" width="122" height="169"/>
+                                <rect key="frame" x="136" y="249" width="122" height="169"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="122" id="Ib5-xN-zoi"/>
                                     <constraint firstAttribute="height" constant="169" id="VVC-yo-xXg"/>
@@ -241,7 +241,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lgb-2g-Jap">
-                                <rect key="frame" x="240" y="295" width="154" height="210"/>
+                                <rect key="frame" x="240" y="228.5" width="154" height="210"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="154" id="E2K-e5-6OV"/>
                                     <constraint firstAttribute="height" constant="210" id="Oz2-VN-UDM"/>

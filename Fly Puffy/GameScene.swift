@@ -44,11 +44,8 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
     
     override func didMove(to view: SKView) {
         
-        
         print(preferredLanguage)
       
-    
-        
         self.physicsWorld.contactDelegate = self
         
         ekranGenisligi = Int(self.size.width)
@@ -102,16 +99,14 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
             mayor.physicsBody?.contactTestBitMask = CarpismaTur.ppg.rawValue
             
         }
-        
-        
-        
-        
-          if let tempKarakter = self.childNode(withName: "can1") as? SKSpriteNode {
+
+        if let tempKarakter = self.childNode(withName: "can1") as? SKSpriteNode {
               
               can1 = tempKarakter
               can1.alpha = 1
               
-          }
+        }
+        
         if let tempKarakter = self.childNode(withName: "can2") as? SKSpriteNode {
             
             can2 = tempKarakter
@@ -138,7 +133,6 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
             }
         }
         timer = Timer.scheduledTimer(timeInterval: 0.02, target: self, selector:#selector(GameScene.hareket) , userInfo: nil, repeats: true)
-        //print("ANA KARAKTER : \(anaKarakter!)")
     }
  
     
@@ -185,8 +179,6 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
         oyunaBaslandiMi = true
     }
     
-   
-    
     func touchUp(atPoint pos : CGPoint) {
       ekranaDokunuluyorMu = false
     }
@@ -214,34 +206,22 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
                 let basaAl:SKAction = SKAction.moveBy(x: CGFloat(ekranGenisligi!+20), y: -CGFloat(arc4random_uniform(UInt32(ekranYuksekligi!))), duration: 0.02)
                 mojojojo.run(basaAl)
                 if can1.alpha == 1 {
-                    print("1 buraya girdi can 1 ü sildi")
                     can1.alpha = 0
                 }else if can2.alpha == 1 {
                     can2.alpha = 0
-                    print("2 buraya girdi can 2 ü sildi")
                 }else if can3.alpha == 1{
                     can3.alpha = 0
-                    print("3 buraya girdi can 3 ü sildi")
                     timer?.invalidate()
                     print(canSayisi)
                     self.viewController?.performSegue(withIdentifier: "oyunToSonuc", sender: nil)
                     
                 }else{
-                    print("SON ELSEDE")
+                    print("ERROR")
                 }
                 
                 
             }
-            
-                
-            }
-            
-            
-            
-            
-         
-        
-        
+        }
         if contact.bodyB.categoryBitMask == CarpismaTur.ppg.rawValue && contact.bodyA.categoryBitMask == CarpismaTur.mojojojo.rawValue {
             canSayisi -= 1
           
@@ -259,23 +239,18 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
                 let basaAl:SKAction = SKAction.moveBy(x: CGFloat(ekranGenisligi!+20), y: -CGFloat(arc4random_uniform(UInt32(ekranYuksekligi!))), duration: 0.02)
                 mojojojo.run(basaAl)
                 if can1.alpha == 1 {
-                    print("1 buraya girdi can 1 ü sildi")
                     can1.alpha = 0
                 }else if can2.alpha == 1 {
                     can2.alpha = 0
-                    print("2 buraya girdi can 2 ü sildi")
                 }else if can3.alpha == 1{
                     can3.alpha = 0
-                    print("3 buraya girdi can 3 ü sildi")
                     timer?.invalidate()
                     print(canSayisi)
                     self.viewController?.performSegue(withIdentifier: "oyunToSonuc", sender: nil)
                     
                 }else{
-                    print("SON ELSEDE")
+                    print("ERROR")
                 }
-                
-                
             }
             
         }
@@ -298,26 +273,20 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
                 let basaAl:SKAction = SKAction.moveBy(x: CGFloat(ekranGenisligi!+20), y: -CGFloat(arc4random_uniform(UInt32(ekranYuksekligi!))), duration: 0.02)
                 him.run(basaAl)
                 if can1.alpha == 1 {
-                    print("1 buraya girdi can 1 ü sildi")
                     can1.alpha = 0
                 }else if can2.alpha == 1 {
                     can2.alpha = 0
-                    print("2 buraya girdi can 2 ü sildi")
                 }else if can3.alpha == 1{
                     can3.alpha = 0
-                    print("3 buraya girdi can 3 ü sildi")
                     timer?.invalidate()
                     print(canSayisi)
                     self.viewController?.performSegue(withIdentifier: "oyunToSonuc", sender: nil)
                     
                 }else{
-                    print("SON ELSEDE")
+                    print("ERROR")
                 }
                 
             }
-            
-            
-            print("ppg - him çarptı")
         }
         
         if contact.bodyB.categoryBitMask == CarpismaTur.ppg.rawValue && contact.bodyA.categoryBitMask == CarpismaTur.him.rawValue {
@@ -338,29 +307,20 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
                 let basaAl:SKAction = SKAction.moveBy(x: CGFloat(ekranGenisligi!+20), y: -CGFloat(arc4random_uniform(UInt32(ekranYuksekligi!))), duration: 0.02)
                 him.run(basaAl)
                 if can1.alpha == 1 {
-                    print("1 buraya girdi can 1 ü sildi")
                     can1.alpha = 0
                 }else if can2.alpha == 1 {
                     can2.alpha = 0
-                    print("2 buraya girdi can 2 ü sildi")
                 }else if can3.alpha == 1{
                     can3.alpha = 0
-                    print("3 buraya girdi can 3 ü sildi")
                     timer?.invalidate()
                     print(canSayisi)
                     self.viewController?.performSegue(withIdentifier: "oyunToSonuc", sender: nil)
                     
                 }else{
-                    print("SON ELSEDE")
+                    print("ERROR")
                 }
-                
-                
             }
-            
-            print("him - ppg çarptı")
         }
-        
-        
         
         
         if contact.bodyA.categoryBitMask == CarpismaTur.ppg.rawValue && contact.bodyB.categoryBitMask == CarpismaTur.professor.rawValue {
@@ -378,8 +338,6 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
                 skorLabel.text = "Skor : \(toplamSkor)"
 
             }
-            
-            print("ppg - professor çarptı")
         }
         
         if contact.bodyB.categoryBitMask == CarpismaTur.ppg.rawValue && contact.bodyA.categoryBitMask == CarpismaTur.professor.rawValue {
@@ -396,8 +354,6 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
                 skorLabel.text = "Skor : \(toplamSkor)"
 
             }
-            
-            print("profesor - ppg çarptı")
         }
         
         if contact.bodyA.categoryBitMask == CarpismaTur.ppg.rawValue && contact.bodyB.categoryBitMask == CarpismaTur.mayor.rawValue {
@@ -414,8 +370,6 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
                 skorLabel.text = "Skor : \(toplamSkor)"
 
             }
-            
-            print("ppg - mayor çarptı")
         }
         
         if contact.bodyB.categoryBitMask == CarpismaTur.ppg.rawValue && contact.bodyA.categoryBitMask == CarpismaTur.mayor.rawValue {
@@ -432,11 +386,7 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
                 skorLabel.text = "Skor : \(toplamSkor)"
 
             }
-            
-            print("mayor - ppg çarptı")
         }
-        
-        
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
      

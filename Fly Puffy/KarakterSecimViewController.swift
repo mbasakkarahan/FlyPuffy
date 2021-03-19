@@ -12,20 +12,6 @@ class KarakterSecimViewController: UIViewController {
     @IBOutlet weak var bubblessColor: UILabel!
     @IBOutlet weak var buttercupColor: UILabel!
     
-   /* let gameScene = GameScene()
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        
-        if segue.identifier == "bubbleToGame"{
-            gameScene.anaKarakter = "Bubble"
-        }
-        if segue.identifier == "blossomToGame"{
-            gameScene.anaKarakter = "Blossom"
-        }
-        if segue.identifier == "buttercupToGame"{
-            gameScene.anaKarakter = "Buttercup"
-        }
-    }*/
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
 
